@@ -1,7 +1,7 @@
 # Odyssey Lift-off I
 
 > [!IMPORTANT]  
-> This is a personal repo for fun, to experiment and learn. It was forked from the original course. Please, find the original (here)[https://github.com/apollographql/odyssey-lift-off-part1].
+> This is a personal repo for fun, to experiment and learn. It was forked from the original course. Please, find the original [here](https://github.com/apollographql/odyssey-lift-off-part1).
 
 Welcome to the companion app of Odyssey Lift-off I! You can [find the course lessons and instructions on Odyssey](https://odyssey.apollographql.com/lift-off-part1), Apollo's learning platform.
 
