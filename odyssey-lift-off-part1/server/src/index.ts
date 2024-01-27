@@ -32,7 +32,7 @@ async function startApolloServer() {
     const server = new ApolloServer({ schema: mockedSchema })
     const { url } = await startStandaloneServer(server)
 
-    console.log(`Server is running!\n Query at ${url}\n`)
+    console.log(`\nServer is running!\nQuery at ${url}\n`)
 }
 
 startApolloServer()
