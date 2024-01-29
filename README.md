@@ -4,3 +4,4 @@ Personal repo for practising and exploring the GraphQL courses offered by [Apoll
 
 
 - [Odyssey Lift-off I](https://odyssey.apollographql.com/lift-off-part1)
+- [Odyssey Lift-off II](https://odyssey.apollographql.com/lift-off-part2)
