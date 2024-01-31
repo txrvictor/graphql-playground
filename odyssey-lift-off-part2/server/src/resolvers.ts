@@ -1,5 +1,6 @@
+import { Resolvers } from './types';
 
-export const resolvers = {
+export const resolvers: Resolvers = {
   Query: {
     // returns an array of Tracks
     tracksForHome: (parent, args, contextValue, info) => {
