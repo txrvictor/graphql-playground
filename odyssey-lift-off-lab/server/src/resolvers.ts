@@ -11,6 +11,11 @@ export const resolvers: Resolvers = {
     track: (_, { id }, { dataSources }) => {
       return dataSources.trackAPI.getTrack(id);
     },
+
+    // returns a module by ID
+    module: (_, { id }, { dataSources }) => {
+      return dataSources.trackAPI.getModule(id);
+    },
   },
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
