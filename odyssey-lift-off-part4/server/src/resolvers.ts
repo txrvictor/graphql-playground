@@ -17,6 +17,31 @@ export const resolvers: Resolvers = {
       return dataSources.trackAPI.getModule(id);
     },
   },
+  Mutation: {
+    // increments a track's numberOfViews property
+    incrementTrackViews: async (_, { id }, { dataSources }) => {
+      try {
+        const track = await dataSources.trackAPI.incrementTrackViews(id);
+  
+        return {
+          code: 200,
+          success: true,
+          message: `Successfully incremented number of views for track ${id}`,
+          track,
+        }
+      } catch (err) {
+        return {
+          // err.extensions is provided by Apollo and has some
+          // useful information that we can use when the API call
+          // failed so that the error response is dynamic
+          code: err.extensions.response.status,
+          success: false,
+          message: err.extensions.response.body,
+          track: null,
+        }
+      }
+    },
+  },
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
       return dataSources.trackAPI.getAuthor(authorId);
